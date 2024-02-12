@@ -49,7 +49,13 @@
             margin: 0 auto;
             margin-bottom: 20px; /* Add some bottom margin to create space between image and text */
         }
-        }
+        img.profile-pic {
+        max-width: 300px; /* Set maximum width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Center image */
+        margin: 0 auto; /* Center horizontally */
+        margin-bottom: 20px; /* Add some bottom margin to create space between image and text */
+    	}
         ul {
             list-style-type: none;
             padding: 0;
@@ -63,6 +69,9 @@
             bottom: 0;
             width: 100%;
         }
+        .hidden {
+            display: none; /* Hide the section by default */
+        }
     </style>
 </head>
 <body>
@@ -74,22 +83,22 @@
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#research" target="_blank">Research</a>
-        <a href="#publications" target="_blank">Publications</a>
-        <a href="#contact" target="_blank">Contact</a>
+        <a href="#research" onclick="toggleSection('research')">Research</a>
+        <a href="#publications" onclick="toggleSection('publications')">Publications</a>
+        <a href="#contact" onclick="toggleSection('contact')">Contact</a>
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <img src="Pictures/Foto_Marokko.jpg" alt="Profile Picture">
+        <img class="profile-pic" src="Pictures/Foto_Marokko.jpg" alt="Profile Picture">
         <p>I am a PhD student at the University of Cambridge, Department of Applied Mathematics and Theoretical Physics (DAMTP). I have always been passionate about research at the intersection of theoretical physics and astrophysics, e.g. black holes, gravitational waves and cosmology.</p>
         <p>I have obtained Bachelor degrees (2020) in Mathematics and Physics (as part of the TWIN-programma at KU Leuven, Belgium), after which I pursued Master's degrees in Theoretical Physics (2022) and Astronomy and Astrophysics (2023). For the latter, I have undertaken a year-long Erasmus exchange to the Radboud University, Nijmegen, where I conducted research under supervision of Professor Peter Jonker and Professor Gijs Nelemans.
     </section>
-    <section id="research">
+    <section id="research" class="hidden">
         <h2>Research</h2>
         <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity under the expert guidance of Professor Ulrich Sperhake. Through computational simulations and mathematical modeling, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity.</p>
         <p>Past research projects have included work on black hole photon rings, hypercompact stellar clusters and the gravitational wave background sourced by white dwarf binaries.
     </section>
-    <section id="publications">
+    <section id="publications" class="hidden">
         <h2>Publications</h2>
         <h3>Papers</h3>
         <ul>
@@ -106,13 +115,25 @@
             <li>Staelens, S. (2023). Merging Compact Objects in the LISA Frequency Band [Master's Thesis Astronomy and Astrophysics, KU Leuven & RU Nijmegen]. Supervisors: Prof. Peter Jonker and Prof. Gijs Nelemans. <a href="PDFs/Masters_Thesis_AnA_Seppe_Staelens.pdf" target="_blank">Link</a></li>
         </ul>
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
         <h2>Contact</h2>
         <p>Email: ss3033@cam.ac.uk</p>
     </section>
     <footer>
         &copy; 2024 Seppe Staelens, Background obtained from <a href="https://wallhaven.cc/w/1pwq23"> Wallraven </a>.
     </footer>
+    <script>
+        function toggleSection(sectionId) {
+            var sections = document.getElementsByTagName('section');
+            for (var i = 0; i < sections.length; i++) {
+                if (sections[i].id === sectionId) {
+                    sections[i].classList.remove('hidden');
+                } else {
+                    sections[i].classList.add('hidden');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
 
