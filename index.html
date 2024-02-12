@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://w.wallhaven.cc/full/1p/wallhaven-1pwq23.png');
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('Pictures/Wallpaper.png');
             background-size: cover;
             color: #fff;
         }
@@ -40,6 +40,15 @@
         }
         section {
             padding: 20px;
+            max-width: 60%; /* Set maximum width to 60% */
+            margin: 0 auto; /* Center content */
+        }
+        img {
+            max-width: 100%; /* Make sure image does not exceed the width of its container */
+            display: block; /* Center image */
+            margin: 0 auto;
+            margin-bottom: 20px; /* Add some bottom margin to create space between image and text */
+        }
         }
         ul {
             list-style-type: none;
@@ -65,12 +74,13 @@
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <a href="#research" target="_blank">Research</a>
+        <a href="#publications" target="_blank">Publications</a>
+        <a href="#contact" target="_blank">Contact</a>
     </nav>
     <section id="about">
         <h2>About Me</h2>
+        <img src="Pictures/Foto_Marokko.jpg" alt="Profile Picture">
         <p>I am a PhD student at the University of Cambridge, Department of Applied Mathematics and Theoretical Physics (DAMTP). I have always been passionate about research at the intersection of theoretical physics and astrophysics, e.g. black holes, gravitational waves and cosmology.</p>
         <p>I have obtained Bachelor degrees (2020) in Mathematics and Physics (as part of the TWIN-programma at KU Leuven, Belgium), after which I pursued Master's degrees in Theoretical Physics (2022) and Astronomy and Astrophysics (2023). For the latter, I have undertaken a year-long Erasmus exchange to the Radboud University, Nijmegen, where I conducted research under supervision of Professor Peter Jonker and Professor Gijs Nelemans.
     </section>
