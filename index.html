@@ -18,33 +18,26 @@
             padding: 20px;
             max-width: 60%; /* Set maximum width to 60% */
             text-align: center;
+            margin: 0 auto;
+            border-radius: 10px;
         }
         h1, h2, h3 {
             color: #fff;
         }
         nav {
-            display: flex;
-            justify-content: center;
+            display: flex; 
+            justify-content: center; 
             max-width: 60%; /* Set maximum width to 60% */
-            background-color: rgba(0, 0, 0, 0.);
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0; 
+            margin: 0 auto; 
         }
         section {
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5);
             max-width: 60%; /* Set maximum width to 60% */
             margin: 0 auto; /* Center content */
+            border-radius: 10px;
         }
         section:first-child {
             margin-top: 50px; /* Add margin to the first section */
@@ -82,18 +75,44 @@
 	    display: flex;
 	    justify-content: space-between;
 	    max-width: 40%;
-	}
-	.publication-links a {
-	    text-decoration: none;
-	    color: #fff;
-	    background-color: #333;
-	    padding: 5px 10px;
-	    border-radius: 5px;
-	    transition: background-color 0.3s ease;
-	}
-	.publication-links a:hover {
-	   background-color: #555;
-	}
+        }
+        .publication-links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #030303;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .publication-links a:hover {
+        background-color: #555;
+        }
+        a {
+            color: #00e5ff; /* Blue color for regular links */
+            text-decoration: none; /* Remove underline */
+        }
+        /* Style for hovered links */
+        a:hover {
+            color: #0095b3; /* Dark blue color for hovered links */
+        }
+        /* Style for active (clicked) links */
+        a:active {
+            color: #ff0000; /* Red color for clicked links */
+        }
+        nav a {
+            color: #fff; 
+            text-decoration: none;
+            padding: 5px 20px; 
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            color: #fff; 
+            background-color: #333;
+        }
+        nav a:active{
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -140,7 +159,7 @@
         <h2>Publications</h2>
         <h3>Papers</h3>
         <ul>
-            <li>Staelens, S., & Nelemans, G. (2024). Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band. Astronomy and Astrophysics, 683, A139.<a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a></li>
+            <li>Staelens, S., & Nelemans, G. (2024). Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band. Astronomy and Astrophysics, 683, A139. <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a></li>
             <li>Staelens, S., Mayerson, D. R., Bacchini, F., Ripperda, B., & Küchler, L. (2023). Black hole photon rings beyond general relativity. Physical Review D, 107(12), 124026. <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.124026">Link</a></li>
         </ul>
         <h3>Book Chapters</h3>
@@ -150,12 +169,13 @@
         <h2>Master's Theses</h2>
         <ul>
             <li>Staelens, S. (2023). Merging Compact Objects in the LISA Frequency Band [Master's Thesis Astronomy and Astrophysics, KU Leuven & RU Nijmegen]. Supervisors: Prof. Peter Jonker and Prof. Gijs Nelemans. <a href="PDFs/Masters_Thesis_AnA_Seppe_Staelens.pdf" target="_blank">Link</a></li>
-            <li>Staelens, S. (2022). Black Hole Photon Rings Beyond General Relativity [Master's Thesis Theoretical Physics, KU Leuven]. Supervisors: Prof. Thomas Hertog and Dr. Daniel Mayerson.<a href="PDFs/Masters_Thesis_Seppe_Staelens.pdf" target="_blank">Link</a></li>
+            <li>Staelens, S. (2022). Black Hole Photon Rings Beyond General Relativity [Master's Thesis Theoretical Physics, KU Leuven]. Supervisors: Prof. Thomas Hertog and Dr. Daniel Mayerson. <a href="PDFs/Masters_Thesis_Seppe_Staelens.pdf" target="_blank">Link</a></li>
         </ul>
         <h2>External</h2>
         <div class="publication-links">
 		<a href="https://arxiv.org/a/staelens_s_1.html" target="_blank">arXiv</a>
 		<a href="https://orcid.org/0000-0002-1262-1600" target="_blank">ORCID</a>
+        <a href="https://github.com/SeppeStaelens" target="_blank">GitHub</a>
     	</div>
     </section>
     <section id="contact" class="hidden">
