@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} % math
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\title{Workshop}
+\author{Seppe Staelens}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Here I am introducing my project.
+
+This is a new line.
+
+\noindent This is a new line without indent.\\
+This is a new line as well, also without indent.\\
+
+This is a new paragraph\\
+\\
+This is a new paragraph without indentation.
+
+\subsection{part of intro}
+
+\subsubsection{very small detail}
+
+\section{Main stuff}
+
+\subsection{Mathematics}
+
+To write maths, we need to enter \textit{math mode}. This is \textbf{very important}.
+
+The basic way to enter math mode is by inserting maths between dollar signs. So I can now write $x = 4$. \\
+Notice the difference without dollar signs, x = 4. If we have a longer equation, that we want to centralize, we can use double dollar signs like this:
+$$\int_0^{+\infty} e^{-x} \text{d} x = 1$$
+
+Suppose I have a very important equation, that I want to refer to later.
+Also
+\begin{equation}
+    a^p \equiv a \mod p
+\end{equation}
+\begin{equation}\label{eq: Pythagoras}
+    a^2 + b^2 = c^2
+\end{equation}
+Look at equation (\ref{eq: Pythagoras}).
+\newpage
+If I have a calculation to do, and I want multiple lines of math mode, I can do
+\begin{align*}
+    x & = (a+b)^2 \\
+    \Leftrightarrow x & = a^2 + 2ab + b^2
+\end{align*}
+
+\begin{proof}
+    I will prove the Riemann hypothesis.
+
+    Done
+    $\mathbb{R}$ $\# \mathbb{R} = 2^{\aleph_0}$
+    $A = \{1,2,3\}$
+\end{proof}
+
+
+\end{document}
