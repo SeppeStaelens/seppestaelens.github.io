@@ -239,6 +239,15 @@
         <p>Finally, files for the LaTeX workshop can be found here as well: <a href="Workshop/Workshop.pdf" target="_blank">this</a> is the PDF, 
             and <a href="Workshop/Workshop.tex" target="_blank">this</a> is the source file (a .tex file). Try to open the latter with a plain text editor if it doesn't open automatically.</p>
     </section>
+    <section id="Animations" class="hidden">
+        <h2>Animations</h2>
+        <p>This webpage contains example animations resulting from NR simulations with GRChombo.</p>
+        <ul class="publications-list">
+            <li>IB: <a href="Animations/mod_phi.gif" target="_blank">scalar field amplitude</a>. This shows the boson star as it gets devoured by the black hole.</li>
+            <li>IB: <a href="Animations/chi.gif" target="_blank">conformal factor</a>. This shows the black hole, prominently, and the boson star, less obvious.</li>
+            <li><a href="Animations/AHF.gif" target="_blank">Growth of the black hole apparent horizon</a> as it devours the boson star. The black hole is also seen to slow down.</li>
+        </ul>
+    </section>
     <footer>
         &copy; 2024 Seppe Staelens, Background obtained from <a href="https://wallhaven.cc/w/1pwq23"> Wallraven </a>.
     </footer>
@@ -259,6 +268,9 @@
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('Immerse24')) {
                 toggleSection('Immerse24');
+            }
+            else if (urlParams.has('Animations')) {
+                toggleSection('Animations');
             }
         });
     </script>
