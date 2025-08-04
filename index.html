@@ -231,7 +231,7 @@
     <section id="Immerse25" class="hidden">
         <h2>Immerse Education: Mathematics 2025</h2>
         <p>
-            This webpage contains the different notes for the summer school on mathematics.
+            This webpage contains the different notes for the Immerse summer school on mathematics.
         </p>
         <ul class="publications-list">
             <li>Course overview <a href="PDFs/Immerse25/Course_overview.pdf" target="_blank">Notes</a></li>
@@ -256,16 +256,16 @@
     <section id="CamVision25" class="hidden">
         <h2>CamVision 2025</h2>
         <p>
-            This webpage contains materials for the summer school on mathematics.
+            This webpage contains materials for the Oxbridge Academic Bootcamp 2025.
         </p>
         <h3>Fundamental mathematics</h3>
         <ul class="publications-list">
-            <li>Set Theory and Mathematical Proofwriting <a href="PDFs/Immerse24/SetProof.pdf" target="_blank">Notes</a></li>
+            <li>Set Theory<a href="PDFs/CamVision25/SetProof.pdf" target="_blank">Notes</a></li>
+            <li>Probability<a href="PDFs/CamVision25/Probability.pdf" target="_blank">Notes</a></li>
         </ul>
         <h3>Advanced mathematics</h3>
         <ul class="publications-list">
-            <li>Calculus / Analysis <a href="PDFs/Immerse24/Calculus.pdf" target="_blank">Notes</a></li>
-            <li>Geometry <a href="PDFs/Immerse24/Geometry.pdf" target="_blank">Notes</a>, the <a href="PDFs/Immerse24/HE+_Lecture_geometry_relativity.pdf" target = "_blank">Slides</a> should not be shared or reused.</li>
+            <li>Integrals <a href="PDFs/CamVision25/Calculus.pdf" target="_blank">Notes</a></li>
         </ul>
         <h3>Maths and CompSci SCA</h3>
         <ul class="publications-list">
@@ -282,8 +282,6 @@
             <li>Cryptography <a href="Code/Immerse24/cryptography.ipynb" download>Notebook</a></li>
             <li>Riemann sums <a href="Code/Immerse24/Riemann_sums.ipynb" download>Notebook</a></li>
         </ul>
-        <!-- <p>Finally, files for the LaTeX workshop can be found here as well: <a href="Workshop/Workshop.pdf" target="_blank">this</a> is the PDF, 
-            and <a href="Workshop/Workshop.tex" target="_blank">this</a> is the source file (a .tex file). Try to open the latter with a plain text editor if it doesn't open automatically.</p> -->
     </section>
     <section id="Animations" class="hidden">
         <h2>Animations</h2>
@@ -312,11 +310,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Check URL parameters
             const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('Immerse24')) {
-                toggleSection('Immerse24');
+            if (urlParams.has('Immerse25')) {
+                toggleSection('Immerse25');
             }
             else if (urlParams.has('Animations')) {
                 toggleSection('Animations');
+            }
+            else if (urlParams.has('CamVision25')) {
+                toggleSection('CamVision25');
             }
         });
     </script>
