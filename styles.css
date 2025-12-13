@@ -1,0 +1,328 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('Pictures/Wallpaper.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 1.6;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #fdfdfd;
+    font-family: 'Work Sans', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-shadow: 1px 2px 8px #222;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    scroll-margin-top: 110px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+section:first-child {
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+img.profile-pic {
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.publication-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+
+.publication-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 8px 16px;
+    border-radius: 10px;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.25s ease, border-bottom 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.publication-links a:hover {
+    background-color: #333;
+    border-bottom: 2px solid #00e5ff;
+    transform: translateY(-1px);
+}
+
+.publication-links a:focus {
+    outline: 2px solid #00e5ff;
+    outline-offset: 2px;
+}
+
+.with-toc {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.side-toc {
+    position: sticky;
+    top: 90px;
+    min-width: 200px;
+    max-width: 220px;
+    max-height: calc(100vh - 140px);
+    overflow: auto;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.side-toc .toc-title {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.side-toc .toc-divider {
+    margin: 4px 0 6px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.side-toc a {
+    display: block;
+    position: relative;
+    padding: 6px 8px 6px 30px;
+    border-radius: 10px;
+    color: #b8ecff;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.side-toc a.toc-h2 {
+    font-weight: 700;
+    padding-left: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.side-toc a.toc-h3 {
+    font-weight: 500;
+    padding-left: 46px;
+    opacity: 0.9;
+}
+
+.side-toc a::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-image: url('Pictures/BH.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.side-toc a.toc-h3::before {
+    left: 18px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+}
+
+.side-toc a:hover {
+    background-color: rgba(0, 229, 255, 0.15);
+    color: #fff;
+}
+
+a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0095b3;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-bottom 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #333;
+    border-bottom: 2px solid #00e5ff;
+}
+
+nav a:active {
+    color: #fff;
+}
+
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 14px;
+}
+
+.publications-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('Pictures/BH.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coauthor {
+    color: #d1c7c7;
+}
+
+@media (max-width: 768px) {
+    header, nav, section {
+        max-width: 92%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        padding: 10px 14px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .publication-links {
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .with-toc {
+        flex-direction: column;
+    }
+
+    .side-toc {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+    }
+}

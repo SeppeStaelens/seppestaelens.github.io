@@ -4,149 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seppe Staelens</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('Pictures/Wallpaper.png');
-            background-size: cover;
-            color: #fff;
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            max-width: 60%; /* Set maximum width to 60% */
-            text-align: center;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-        h1, h2, h3 {
-            color: #fdfdfd; /* slightly off-white */
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-shadow: 1px 2px 8px #222;
-            margin-top: 32px;
-            margin-bottom: 16px;
-        }
-        h3 {
-            text-decoration: underline;
-            text-underline-offset: 6px;
-        }
-        nav {
-            display: flex; 
-            justify-content: center; 
-            max-width: 60%; /* Set maximum width to 60% */
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 10px 0; 
-            margin: 0 auto; 
-        }
-        section {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            max-width: 60%; /* Set maximum width to 60% */
-            margin: 0 auto; /* Center content */
-            border-radius: 10px;
-        }
-        section:first-child {
-            margin-top: 50px; /* Add margin to the first section */
-        }
-        img {
-            max-width: 100%; /* Make sure image does not exceed the width of its container */
-            display: block; /* Center image */
-            margin: 0 auto;
-            margin-bottom: 20px; /* Add some bottom margin to create space between image and text */
-        }
-        img.profile-pic {
-        max-width: 300px; /* Set maximum width */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Center image */
-        margin: 0 auto; /* Center horizontally */
-        margin-bottom: 20px; /* Add some bottom margin to create space between image and text */
-    	}
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .hidden {
-            display: none; /* Hide the section by default */
-        }
-        .publication-links {
-	    display: flex;
-	    justify-content: space-between;
-	    max-width: 60%;
-        }
-        .publication-links a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #030303;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .publication-links a:hover {
-        background-color: #555;
-        }
-        a {
-            color: #00e5ff; /* Blue color for regular links */
-            text-decoration: none; /* Remove underline */
-        }
-        /* Style for hovered links */
-        a:hover {
-            color: #0095b3; /* Dark blue color for hovered links */
-        }
-        /* Style for active (clicked) links */
-        a:active {
-            color: #ff0000; /* Red color for clicked links */
-        }
-        nav a {
-            color: #fff; 
-            text-decoration: none;
-            padding: 5px 20px; 
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            color: #fff; 
-            background-color: #333;
-        }
-        nav a:active{
-            color: #fff;
-        }
-        .publications-list {
-            list-style-type: none; /* Remove default bullets */
-            padding: 0; /* Remove default padding */
-        }
-        .publications-list li {
-            position: relative; /* Position relative for custom bullet */
-            padding-left: 30px; /* Space for the custom bullet */
-            margin-bottom: 10px; /* Space between list items */
-        }
-        .publications-list li::before {
-            content: ''; /* No text content */
-            position: absolute; /* Position absolute for placing bullet */
-            left: 0; /* Position bullet to the left */
-            top: 50%; /* Center the image vertically */
-            transform: translateY(-50%); /* Center the image vertically */
-            width: 20px; /* Width of the image */
-            height: 20px; /* Height of the image */
-            background-image: url('Pictures/BH.png'); /* Path to the black hole image */
-            background-size: contain; /* Ensure the image fits within the specified width/height */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-        }
-        .coauthor {
-            color: #d1c7c7; /* light grey, adjust as needed */
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -177,69 +38,100 @@
     </section>
     <section id="research" class="hidden">
         <h2>Research</h2>
-        <h3>Numerical Relativity</h3>
-        <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity to simulate coalescing binaries under the expert guidance of Professor Ulrich Sperhake. 
-            Through computational simulations, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity. 
-            Our recent publication in  <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Physical Review Letters</a> presents long-term stable simulations of ultracompact solitonic boson stars, revealing that the feared light-ring instability may not be effective in destroying all ultracompact black-hole mimickers after all.</p>
-        <h3>Deep learning in biostatistics</h3>
-        <p>I am currently undertaking a <a href="https://dirac.ac.uk/innovation_placement/cruk-scotland-institute-cancer-genomics-and-imaging-data/">DiRAC Innovation Placement</a> at the Cancer Research UK Scotland Institute, on multimodal data integration and analysis. We are exploring how to improve automated domain identification in tissue slices, leveraging deep learning techniques to enhance the accuracy and efficiency of our analyses.</p>
-        <h3>Machine learning for eccentric compact binaries</h3>
-        <p>Work in progress, we are aiming to construct better machine-learning classifiers for identifying signatures of eccentricity in compact binary mergers.</p>
-        <h2>Previous Projects</h2>
-        <h3>Gravitational wave background from extragalactic white dwarf binaries</h3>
-        <p>As part of my Master's Thesis in Astrophysics and Astronomy, I have studied the astrophysical gravitational-wave background (GWB) sourced by extragalactic white dwarf binaries in the LISA frequency band. Guided by Prof. Gijs Nelemans, we revisited an old paper studying this background, and compared it to other components making up the astrophysical GWB. 
-            Upper limits on the latter (in the high-frequency regime) have been placed by the LVK collaboration, and our simulation of the white dwarf GWB suggests that it must be the dominant component in the LISA frequency band, as opposed to what people thought. This suggests that we must be wary of drawing conclusions about the black hole and neutron star populations, should LISA detect such a GWB in the future.</p>
-        <h3>Hypercompact stellar clusters</h3>
-        <p>Another leg of that Master's Thesis focused on hypercompact stellar clusters (HCSCs), and the role that stellar-mass black holes can play in their appearance. Together with Prof. Peter Jonker, I used PhaseFlow (a Fokker-Planck type code) to simulate HCSCs, in order to find that a compact population can have a significant influence on the cluster dynamics and its observational appearance. 
-            We then briefly turned towards some faint stellar clusters that could potentially be such long sought-after HCSCs, and investigated whether our simulations could potentially explain their observational features. 
-            Even though parts of the parameter space seemed to overlap with observations, further measurements of these cluster properties are required, such as the velocity dispersion, in order to draw conclusions.</p>
-        <h3>Photon rings beyond General Relativity</h3>
-        <p>My first actual research project was my Master's Thesis in theoretical physics, in which I studied the photon rings of black hole models in extensions of General Relativity (GR). Under the supervision of Prof. Thomas Hertog, and together with Dr. Daniel Mayerson and Prof. Fabio Bacchini, I studied a handful of black-hole spacetimes beyond GR and their observational features in VLBI images, such as those constructed by the Event Horizon Telescope (EHT).
-        First, we focused on the shadow, which is known to not be a great observable. We then turned towards the photon rings, which is a more promising observable, and found that in theory it can be used to distinguish between different black hole models, and therefore potentially test GR.
-        We focused on the Lyapunov exponent, which roughly determines the relative width of successive photon rings, and found that its value along the critical curve can vary significantly based on the underlying spacetime.
-        As this exponent is supposed to be independent of the actual emission model of the surrouding accretion disk, its measurement could potentially be used to test the underlying spacetime model. Measuring this quantity in practice is not possible as of now, but future versions of the EHT could allow us to estimate it, making its theoretical calculation of great interest.</p>  
-        <p>As a current side project, I am exploring the lensing around ultracompact boson stars in more detail, to understand whether the absence of a horizon and the presence of additional photon rings can leave significant imprints on observables.</p>
+        <div class="with-toc">
+            <nav class="side-toc" aria-label="Research contents">
+                <span class="toc-title">On this page</span>
+                <a class="toc-h3" href="#numerical-relativity">Numerical Relativity</a>
+                <a class="toc-h3" href="#deep-learning">Deep learning in biostatistics</a>
+                <a class="toc-h3" href="#ml-eccentric">ML for eccentric binaries</a>
+                <hr class="toc-divider">
+                <a class="toc-h2" href="#previous-projects">Previous projects</a>
+                <a class="toc-h3" href="#gwb-white-dwarf">White dwarf GWB</a>
+                <a class="toc-h3" href="#hcsc">Hypercompact stellar clusters</a>
+                <a class="toc-h3" href="#photon-rings">Photon rings beyond GR</a>
+            </nav>
+            <div class="section-content">
+                <h3 id="numerical-relativity">Numerical Relativity</h3>
+                <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity to simulate coalescing binaries under the expert guidance of Professor Ulrich Sperhake. 
+                    Through computational simulations, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity. 
+                    Our recent publication in  <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Physical Review Letters</a> presents long-term stable simulations of ultracompact solitonic boson stars, revealing that the feared light-ring instability may not be effective in destroying all ultracompact black-hole mimickers after all.</p>
+                <h3 id="deep-learning">Deep learning in biostatistics</h3>
+                <p>I am currently undertaking a <a href="https://dirac.ac.uk/innovation_placement/cruk-scotland-institute-cancer-genomics-and-imaging-data/">DiRAC Innovation Placement</a> at the Cancer Research UK Scotland Institute, on multimodal data integration and analysis. We are exploring how to improve automated domain identification in tissue slices, leveraging deep learning techniques to enhance the accuracy and efficiency of our analyses.</p>
+                <h3 id="ml-eccentric">Machine learning for eccentric compact binaries</h3>
+                <p>Work in progress, we are aiming to construct better machine-learning classifiers for identifying signatures of eccentricity in compact binary mergers.</p>
+                <h2 id="previous-projects">Previous Projects</h2>
+                <h3 id="gwb-white-dwarf">Gravitational wave background from extragalactic white dwarf binaries</h3>
+                <p>As part of my Master's Thesis in Astrophysics and Astronomy, I have studied the astrophysical gravitational-wave background (GWB) sourced by extragalactic white dwarf binaries in the LISA frequency band. Guided by Prof. Gijs Nelemans, we revisited an old paper studying this background, and compared it to other components making up the astrophysical GWB. 
+                    Upper limits on the latter (in the high-frequency regime) have been placed by the LVK collaboration, and our simulation of the white dwarf GWB suggests that it must be the dominant component in the LISA frequency band, as opposed to what people thought. This suggests that we must be wary of drawing conclusions about the black hole and neutron star populations, should LISA detect such a GWB in the future.</p>
+                <h3 id="hcsc">Hypercompact stellar clusters</h3>
+                <p>Another leg of that Master's Thesis focused on hypercompact stellar clusters (HCSCs), and the role that stellar-mass black holes can play in their appearance. Together with Prof. Peter Jonker, I used PhaseFlow (a Fokker-Planck type code) to simulate HCSCs, in order to find that a compact population can have a significant influence on the cluster dynamics and its observational appearance. 
+                    We then briefly turned towards some faint stellar clusters that could potentially be such long sought-after HCSCs, and investigated whether our simulations could potentially explain their observational features. 
+                    Even though parts of the parameter space seemed to overlap with observations, further measurements of these cluster properties are required, such as the velocity dispersion, in order to draw conclusions.</p>
+                <h3 id="photon-rings">Photon rings beyond General Relativity</h3>
+                <p>My first actual research project was my Master's Thesis in theoretical physics, in which I studied the photon rings of black hole models in extensions of General Relativity (GR). Under the supervision of Prof. Thomas Hertog, and together with Dr. Daniel Mayerson and Prof. Fabio Bacchini, I studied a handful of black-hole spacetimes beyond GR and their observational features in VLBI images, such as those constructed by the Event Horizon Telescope (EHT).
+                First, we focused on the shadow, which is known to not be a great observable. We then turned towards the photon rings, which is a more promising observable, and found that in theory it can be used to distinguish between different black hole models, and therefore potentially test GR.
+                We focused on the Lyapunov exponent, which roughly determines the relative width of successive photon rings, and found that its value along the critical curve can vary significantly based on the underlying spacetime.
+                As this exponent is supposed to be independent of the actual emission model of the surrouding accretion disk, its measurement could potentially be used to test the underlying spacetime model. Measuring this quantity in practice is not possible as of now, but future versions of the EHT could allow us to estimate it, making its theoretical calculation of great interest.</p>  
+                <p>As a current side project, I am exploring the lensing around ultracompact boson stars in more detail, to understand whether the absence of a horizon and the presence of additional photon rings can leave significant imprints on observables.</p>
+            </div>
+        </div>
         </section>
     <section id="publications" class="hidden">
-        <h2>External links</h2>
-        <div class="publication-links">
-        <a href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank">Inspire HEP</a>
-        <a href="https://scholar.google.be/citations?user=zMg5-84AAAAJ&hl=en" target="_blank">Scholar</a>
-		<a href="https://arxiv.org/a/staelens_s_1.html" target="_blank">arXiv</a>
-		<a href="https://orcid.org/0000-0002-1262-1600" target="_blank">ORCID</a>
-        <a href="https://www.researchgate.net/profile/Seppe_Staelens" target="_blank">ResearchGate</a>
-    	</div>
-        <h2>Publications</h2>
-        <h3>Papers</h3>
-        <ul class="publications-list">
-            <li><b>Staelens, S. J.</b> (2025). <em>Search for growing angular modes in ultracompact boson star evolutions</em>. <a href="https://arxiv.org/abs/2508.19460">arXiv:2508.19460</a> [gr-qc]</li>
-            <li><span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, <span class="coauthor">Evstafyeva, T.</span>, & <span class="coauthor">Sperhake, U.</span> (2025). <em>Long-term stable nonlinear evolutions of ultracompact black-hole mimickers</em>. Phys. Rev. Lett. 135, 131402. <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Link</a></li>
-            <li><b>Staelens, S.</b>, & <span class="coauthor">Nelemans, G.</span> (2024). <em>Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band</em>. Astronomy and Astrophysics, 683, A139. <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a></li>
-            <li><b>Staelens, S.</b>, <span class="coauthor">Mayerson, D. R.</span>, <span class="coauthor">Bacchini, F.</span>, <span class="coauthor">Ripperda, B.</span>, & <span class="coauthor">Küchler, L.</span>   (2023). <em>Black hole photon rings beyond general relativity</em>. Physical Review D, 107(12), 124026. <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.124026">Link</a></li>
-        </ul>
-        <h3>Book Chapters</h3>
-        <ul class="publications-list">
-        <li>Lupsasca, A., Mayerson, D.R., Ripperda, B., <b>Staelens, S.</b> (2024). <em>A Beginner’s Guide to Black Hole Imaging and Associated Tests of General Relativity</em>. In: Bambi, C., Cárdenas-Avendaño, A. (eds) <em>Recent Progress on Gravity Tests</em>. Springer Series in Astrophysics and Cosmology. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-97-2871-8_6">Springer link</a>, <a href="https://arxiv.org/abs/2402.01290">arXiv link</a></li>
-        </ul>
-        <h2>Recorded Talks</h2>
-        <ul class="publications-list">
-            <li><b>Staelens, S. J.</b> <em>Long-term stable non-linear evolutions of ultracompact black hole mimickers.</em> Perimeter Institute, May 08, 2025,  <a href="https://pirsa.org/25050027" > recording</a>.</li>
-            <li><b>Staelens, S. J.</b> <em>Stable evolutions of ultracompact BH mimickers in 3+1 dimensions.</em>  24th International Conference on General Relativity and Gravitation & the 16th Edoardo Amaldi Conference on Gravitational Waves, Glasgow, July 15, 2025. <a href="https://youtu.be/GYUBEjPikfU?si=QDZbEdOjnHS7Ks7J&t=4512"> recording</a>.</li>
-        </ul>
-        <h2>Master's Theses</h2>
-        <ul class="publications-list">
-            <li><b>Staelens, S.</b> (2023). <em>Merging Compact Objects in the LISA Frequency Band</em> [Master's Thesis Astronomy and Astrophysics, KU Leuven & RU Nijmegen]. Supervisors: Prof. Peter Jonker and Prof. Gijs Nelemans. <a href="PDFs/Masters_Thesis_AnA_Seppe_Staelens.pdf" target="_blank">Link</a></li>
-            <li><b>Staelens, S.</b> (2022). <em>Black Hole Photon Rings Beyond General Relativity</em> [Master's Thesis Theoretical Physics, KU Leuven]. Supervisors: Prof. Thomas Hertog and Dr. Daniel Mayerson. <a href="PDFs/Masters_Thesis_Seppe_Staelens.pdf" target="_blank">Link</a></li>
-        </ul>
-        <h2>Outreach</h2>
-        <ul class="publications-list">
-            <li>Podcast <b>ET voor de vrienden</b>: guest in Episode 2, <em>A black hole on the highway</em>. More info on <a href="https://www.etforbusiness.be/nl/einsteintelescoop-podcast/aflevering-2">the website</a>.</li>
-            <li>NOVA press release: <em>Dutch students warn space mission of noisy white dwarfs</em>. 
-                <a href="https://www.astronomie.nl/nieuws/en/nijmegen-students-warn-space-mission-of-noisy-white-dwarfs-4298" target="_blank">English</a>, 
-                <a href="https://www.astronomie.nl/nieuws/nijmeegse-studenten-waarschuwen-ruimtemissie-voor-lawaaiige-witte-dwergen-4298" target="_blank">Dutch</a></li>
-            <li><b>Staelens, S.</b>, Hofman, S. (2025). <em>De achtergrondruis van dansende witte dwergen: samen staan ze sterk</em>. Zenit, April 2025, 34-38.</li>
-            <li><b>Staelens, S.</b>, Hofman, S. (2025). <em>De achtergrondruis van dansende witte dwergen</em>. Nederlands Tijdschrift voor Natuurkunde, 91(6), 28-30.</li>
-        </ul>   
+        <div class="with-toc">
+            <nav class="side-toc" aria-label="Publications contents">
+                <span class="toc-title">On this page</span>
+                <a class="toc-h2" href="#external-links">External links</a>
+                <hr class="toc-divider">
+                <a class="toc-h2" href="#pubs-list">Publications</a>
+                <a class="toc-h3" href="#papers">Papers</a>
+                <a class="toc-h3" href="#book-chapters">Book chapters</a>
+                <hr class="toc-divider">
+                <a class="toc-h2" href="#talks">Recorded talks</a>
+                <a class="toc-h2" href="#masters-theses">Master's theses</a>
+                <a class="toc-h2" href="#outreach">Outreach</a>
+            </nav>
+            <div class="section-content">
+                <h2 id="external-links">External links</h2>
+                <div class="publication-links">
+                <a href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank">Inspire HEP</a>
+                <a href="https://scholar.google.be/citations?user=zMg5-84AAAAJ&hl=en" target="_blank">Scholar</a>
+			<a href="https://arxiv.org/a/staelens_s_1.html" target="_blank">arXiv</a>
+			<a href="https://orcid.org/0000-0002-1262-1600" target="_blank">ORCID</a>
+                <a href="https://www.researchgate.net/profile/Seppe_Staelens" target="_blank">ResearchGate</a>
+        	</div>
+                <h2 id="pubs-list">Publications</h2>
+                <h3 id="papers">Papers</h3>
+                <ul class="publications-list">
+                    <li><b>Staelens, S. J.</b> (2025). <em>Search for growing angular modes in ultracompact boson star evolutions</em>. <a href="https://arxiv.org/abs/2508.19460">arXiv:2508.19460</a> [gr-qc]</li>
+                    <li><span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, <span class="coauthor">Evstafyeva, T.</span>, & <span class="coauthor">Sperhake, U.</span> (2025). <em>Long-term stable nonlinear evolutions of ultracompact black-hole mimickers</em>. Phys. Rev. Lett. 135, 131402. <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Link</a></li>
+                    <li><b>Staelens, S.</b>, & <span class="coauthor">Nelemans, G.</span> (2024). <em>Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band</em>. Astronomy and Astrophysics, 683, A139. <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a></li>
+                    <li><b>Staelens, S.</b>, <span class="coauthor">Mayerson, D. R.</span>, <span class="coauthor">Bacchini, F.</span>, <span class="coauthor">Ripperda, B.</span>, & <span class="coauthor">Küchler, L.</span>   (2023). <em>Black hole photon rings beyond general relativity</em>. Physical Review D, 107(12), 124026. <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.124026">Link</a></li>
+                </ul>
+                <h3 id="book-chapters">Book Chapters</h3>
+                <ul class="publications-list">
+                <li>Lupsasca, A., Mayerson, D.R., Ripperda, B., <b>Staelens, S.</b> (2024). <em>A Beginner’s Guide to Black Hole Imaging and Associated Tests of General Relativity</em>. In: Bambi, C., Cárdenas-Avendaño, A. (eds) <em>Recent Progress on Gravity Tests</em>. Springer Series in Astrophysics and Cosmology. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-97-2871-8_6">Springer link</a>, <a href="https://arxiv.org/abs/2402.01290">arXiv link</a></li>
+                </ul>
+                <h2 id="talks">Recorded Talks</h2>
+                <ul class="publications-list">
+                    <li><b>Staelens, S. J.</b> <em>Long-term stable non-linear evolutions of ultracompact black hole mimickers.</em> Perimeter Institute, May 08, 2025,  <a href="https://pirsa.org/25050027" > recording</a>.</li>
+                    <li><b>Staelens, S. J.</b> <em>Stable evolutions of ultracompact BH mimickers in 3+1 dimensions.</em>  24th International Conference on General Relativity and Gravitation & the 16th Edoardo Amaldi Conference on Gravitational Waves, Glasgow, July 15, 2025. <a href="https://youtu.be/GYUBEjPikfU?si=QDZbEdOjnHS7Ks7J&t=4512"> recording</a>.</li>
+                </ul>
+                <h2 id="masters-theses">Master's Theses</h2>
+                <ul class="publications-list">
+                    <li><b>Staelens, S.</b> (2023). <em>Merging Compact Objects in the LISA Frequency Band</em> [Master's Thesis Astronomy and Astrophysics, KU Leuven & RU Nijmegen]. Supervisors: Prof. Peter Jonker and Prof. Gijs Nelemans. <a href="PDFs/Masters_Thesis_AnA_Seppe_Staelens.pdf" target="_blank">Link</a></li>
+                    <li><b>Staelens, S.</b> (2022). <em>Black Hole Photon Rings Beyond General Relativity</em> [Master's Thesis Theoretical Physics, KU Leuven]. Supervisors: Prof. Thomas Hertog and Dr. Daniel Mayerson. <a href="PDFs/Masters_Thesis_Seppe_Staelens.pdf" target="_blank">Link</a></li>
+                </ul>
+                <h2 id="outreach">Outreach</h2>
+                <ul class="publications-list">
+                    <li>Podcast <b>ET voor de vrienden</b>: guest in Episode 2, <em>A black hole on the highway</em>. More info on <a href="https://www.etforbusiness.be/nl/einsteintelescoop-podcast/aflevering-2">the website</a>.</li>
+                    <li>NOVA press release: <em>Dutch students warn space mission of noisy white dwarfs</em>. 
+                        <a href="https://www.astronomie.nl/nieuws/en/nijmegen-students-warn-space-mission-of-noisy-white-dwarfs-4298" target="_blank">English</a>, 
+                        <a href="https://www.astronomie.nl/nieuws/nijmeegse-studenten-waarschuwen-ruimtemissie-voor-lawaaiige-witte-dwergen-4298" target="_blank">Dutch</a></li>
+                    <li><b>Staelens, S.</b>, Hofman, S. (2025). <em>De achtergrondruis van dansende witte dwergen: samen staan ze sterk</em>. Zenit, April 2025, 34-38.</li>
+                    <li><b>Staelens, S.</b>, Hofman, S. (2025). <em>De achtergrondruis van dansende witte dwergen</em>. Nederlands Tijdschrift voor Natuurkunde, 91(6), 28-30.</li>
+                </ul>   
+            </div>
+        </div>
     </section>
     <section id="contact" class="hidden">
         <h2>Contact</h2>
@@ -320,32 +212,7 @@
     <footer>
         &copy; 2024 Seppe Staelens, Background obtained from <a href="https://wallhaven.cc/w/1pwq23"> Wallraven </a>.
     </footer>
-    <script>
-        function toggleSection(sectionId) {
-            var sections = document.getElementsByTagName('section');
-            for (var i = 0; i < sections.length; i++) {
-                if (sections[i].id === sectionId) {
-                    sections[i].classList.remove('hidden');
-                } else {    
-                    sections[i].classList.add('hidden');
-                }
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check URL parameters
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('Immerse25')) {
-                toggleSection('Immerse25');
-            }
-            else if (urlParams.has('Animations')) {
-                toggleSection('Animations');
-            }
-            else if (urlParams.has('CamVision25')) {
-                toggleSection('CamVision25');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
