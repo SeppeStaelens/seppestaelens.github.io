@@ -1,0 +1,96 @@
+- date: "2025-12-16"
+  type: talk
+  content: "Talk at UKNR 2025 on nonlinear evolutions of ultracompact black-hole mimickers."
+  location: "Birmingham, UK"
+  links:
+    - text: Conference
+      url: https://www.uknumericalrelativity.org/meetings-conferences/uknr-2025-in-birmingham
+
+- date: "2025-11-21"
+  type: visit
+  content: "Presented at the MIT Dark Matter Journal Club."
+  location: "Boston, USA"
+  links:
+    - text: Conference link
+      url: https://www.uknumericalrelativity.org/meetings-conferences/uknr-2025-in-birmingham
+
+- date: "2025-11-4"
+  type: visit
+  content: "Initial data in NR workshop at Queen Mary University of London."
+  location: "London, UK"
+
+- date: "2025-10-29"
+  type: visit
+  content: "Visit to Utrecht University."
+  location: "Utrecht, NL"
+
+- date: "2025-10-28"
+  type: talk
+  content: "Presented at the Belgian-Dutch GW meeting."
+  location: "Nijmegen, NL"
+
+- date: "2025-09-26"
+  type: publication
+  content: "Paper on nonlinear evolutions of ultracompact black-hole mimickers now published in PRL!"
+  location: "Cambridge, UK"
+  links:
+    - text: Journal link
+      url: https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f
+
+- date: "2025-08-26"
+  type: publication
+  content: "Preprint on growing angular modes in ultracompact boson star evolutions is now on arXiv."
+  location: "Cambridge, UK"
+  links:
+    - text: Preprint
+      url: https://arxiv.org/abs/2508.19460
+
+- date: "2025-08-1"
+  type: job
+  content: "Started Research Internship at Cancer Research UK Scotland Institute."
+  location: "Glasgow, UK"
+  links:
+    - text: Preprint
+      url: https://arxiv.org/abs/2508.19460
+
+- date: "2025-07-15"
+  type: talk
+  content: "Spoke at GR24/Amaldi16 on stable evolutions of ultracompact black-hole mimickers."
+  location: "Glasgow, UK"
+  links:
+    - text: Session recording
+      url: https://youtu.be/GYUBEjPikfU?si=QDZbEdOjnHS7Ks7J&t=4512
+
+- date: "2025-05-08"
+  type: talk
+  content: "Invited seminar at Perimeter Institute on long-term stable evolutions of BH mimickers."
+  location: "Waterloo, Canada"
+  links:
+    - text: Recording
+      url: https://pirsa.org/25050027
+
+- date: "2025-04-24"
+  type: publication
+  content: "Preprint on nonlinear evolutions of ultracompact black-hole mimickers on ArXiv!"
+  location: "Cambridge, UK"
+  links:
+    - text: Preprint
+      url: https://arxiv.org/abs/2504.17775
+
+- date: "2024-07-10"
+  type: publication
+  content: "Book chapter on black hole imaging and GR tests released in Springer volume."
+  location: "Cambridge, UK"
+  links:
+    - text: Springer link
+      url: https://doi.org/10.1007/978-981-97-2871-8_6
+    - text: arXiv link
+      url: https://arxiv.org/abs/2402.01290
+
+- date: "2024-03-15"
+  type: publication
+  content: "A&A paper on the gravitational-wave background from white dwarf binaries is out."
+  location: "Cambridge, UK"
+  links:
+    - text: Journal link
+      url: https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html

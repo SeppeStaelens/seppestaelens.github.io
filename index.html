@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,22 +24,33 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <img class="profile-pic" src="Pictures/Foto_Marokko.jpg" alt="Profile Picture">
-        <div class="publication-links">
-            <a href="PDFs/CV_Seppe_Staelens_no_phone.pdf" target="_blank">CV</a>
-            <a href="https://www.linkedin.com/in/seppestaelens/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/SeppeStaelens" target="_blank">GitHub</a>
+        <div class="about-layout">
+            <div class="about-main">
+                <img class="profile-pic" src="Pictures/Foto_Marokko.jpg" alt="Profile Picture">
+                <div class="publication-links">
+                    <a href="PDFs/CV_Seppe_Staelens_no_phone.pdf" target="_blank">CV</a>
+                    <a href="https://www.linkedin.com/in/seppestaelens/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/SeppeStaelens" target="_blank">GitHub</a>
+                </div>
+                <p>I am a PhD student at the University of Cambridge, Department of Applied Mathematics and Theoretical Physics (DAMTP). 
+                    I am a member of the Numerical Relativity group, under supervision of Prof. Ulrich Sperhake. I am funded by the <a href="https://cdtdis.bigdata.cam.ac.uk/">Centre for Doctoral Training in Data Intensive Science</a>, which has provided me with a strong background in research computing, Bayesian data analysis, and machine learning.</p>
+                <p>I have always been passionate about research at the intersection of theoretical physics and astrophysics, e.g. black holes, gravitational waves and cosmology, which has shaped my educational trajectory.
+                    I have obtained Bachelor degrees (2020) in Mathematics and Physics as part of the TWIN-programme at KU Leuven, Belgium. I started university thinking that I would go on to study a Master in Astrophysics, but courses on General Relativity and particle physics sparked my interest for theoretical physics. 
+                    As I couldn't decide, I decide to pursue both paths, which led me to obtain a Master's degree in Theoretical Physics (2022) and Astronomy and Astrophysics (2023) at KU Leuven.
+                    For the latter, I have undertaken a year-long Erasmus exchange to the Radboud University, Nijmegen, drawn by the interesting courses they had on offer.</p>
+                <p>Furthermore, I am the President of the <a href="https://cambridge-university-belgian-society.sumupstore.com/page/the-committee" target="_blank">Cambridge University Belgian Society</a> for the academic year 2024-2025, staying on as co-President for 2025-2026.
+                   As a society, we aim to promote Belgian culture at the University of Cambridge and to provide a supportive, social network for students with (and without) ties to Belgium. We organise many events, most notoriously our <a href="https://cambridge-university-belgian-society.sumupstore.com/page/black-tie-dinner-2026" target="_blank">Annual Black Tie Dinner</a>!</p>
+            </div>
+            <aside class="news-sidebar" aria-label="Updates">
+                <h3>Updates</h3>
+                <p class="news-intro">Recent news, publications, and talks.</p>
+                <div class="news-section">
+                    <div id="news-list" aria-live="polite"></div>
+                </div>
+            </aside>
         </div>
-        <p>I am a PhD student at the University of Cambridge, Department of Applied Mathematics and Theoretical Physics (DAMTP). 
-            I am a member of the Numerical Relativity group, under supervision of Prof. Ulrich Sperhake. I am funded by the <a href="https://cdtdis.bigdata.cam.ac.uk/">Centre for Doctoral Training in Data Intensive Science</a>, which has provided me with a strong background in research computing, Bayesian data analysis, and machine learning.</p>
-        <p>I have always been passionate about research at the intersection of theoretical physics and astrophysics, e.g. black holes, gravitational waves and cosmology, which has shaped my educational trajectory.
-            I have obtained Bachelor degrees (2020) in Mathematics and Physics as part of the TWIN-programme at KU Leuven, Belgium. I started university thinking that I would go on to study a Master in Astrophysics, but courses on General Relativity and particle physics sparked my interest for theoretical physics. 
-            As I couldn't decide, I decide to pursue both paths, which led me to obtain a Master's degree in Theoretical Physics (2022) and Astronomy and Astrophysics (2023) at KU Leuven.
-            For the latter, I have undertaken a year-long Erasmus exchange to the Radboud University, Nijmegen, drawn by the interesting courses they had on offer.</p>
-        <p>Furthermore, I am the President of the <a href="https://cambridge-university-belgian-society.sumupstore.com/page/the-committee" target="_blank">Cambridge University Belgian Society</a> for the academic year 2024-2025, staying on as co-President for 2025-2026.</p>
     </section>
     <section id="research" class="hidden">
-        <h2>Research</h2>
         <div class="with-toc">
             <nav class="side-toc" aria-label="Research contents">
                 <span class="toc-title">On this page</span>
@@ -51,6 +64,7 @@
                 <a class="toc-h3" href="#photon-rings">Photon rings beyond GR</a>
             </nav>
             <div class="section-content">
+                <h2>Research</h2>
                 <h3 id="numerical-relativity">Numerical Relativity</h3>
                 <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity to simulate coalescing binaries under the expert guidance of Professor Ulrich Sperhake. 
                     Through computational simulations, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity. 
