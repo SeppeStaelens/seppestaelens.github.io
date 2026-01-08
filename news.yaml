@@ -10,9 +10,6 @@
   type: visit
   content: "Presented at the MIT Dark Matter Journal Club."
   location: "Boston, USA"
-  links:
-    - text: Conference link
-      url: https://www.uknumericalrelativity.org/meetings-conferences/uknr-2025-in-birmingham
 
 - date: "2025-11-4"
   type: visit
