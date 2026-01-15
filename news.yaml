@@ -1,3 +1,8 @@
+- date: "2025-01-15"
+  type: visit
+  content: "Attending the GW:UK workshop."
+  location: "Nottingham, UK"
+
 - date: "2025-12-16"
   type: talk
   content: "Talk at UKNR 2025 on nonlinear evolutions of ultracompact black-hole mimickers."
