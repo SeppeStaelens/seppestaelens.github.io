@@ -1,3 +1,13 @@
+- date: "2026-01-28"
+  type: job
+  content: "Wrapped up my 6 month DiRAC Innovation Placement at the Cancer Research UK Scotland Institute."
+  location: "Glasgow, UK"
+
+- date: "2026-01-26"
+  type: talk
+  content: "Multimodal data analysis in cancer research using GASTON."
+  location: "Glasgow, UK"
+
 - date: "2026-01-15"
   type: visit
   content: "Attending the GW:UK workshop."
@@ -51,9 +61,6 @@
   type: job
   content: "Started Research Internship at Cancer Research UK Scotland Institute."
   location: "Glasgow, UK"
-  links:
-    - text: Preprint
-      url: https://arxiv.org/abs/2508.19460
 
 - date: "2025-07-15"
   type: talk
