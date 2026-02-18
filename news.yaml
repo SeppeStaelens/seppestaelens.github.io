@@ -1,3 +1,13 @@
+- date: "2026-02-18"
+  type: job
+  content: "Starting internship at FactTrace."
+  location: "Cambridge, UK"
+
+- date: "2026-02-16"
+  type: visit
+  content: "CU Belgian Society Black Tie Dinner 2026."
+  location: "Queens' College, Cambridge, UK"
+
 - date: "2026-02-11"
   type: talk
   content: "Black hole photon rings: theory and a little bit of observation. DAMTP, PhD Journal Club."
