@@ -1,10 +1,12 @@
-# - date: "2025-02-XX"
-#   type: publication
-#   content: "Outreach article and podcast based on our PRL."
-#   location: "Cambridge, UK"
-#   links:
-#     - text: Faculty webpage
-#       url: https://www.maths.cam.ac.uk/features/dark-stars-new-theories-shed-light-black-holes
+- date: "2025-03-02"
+  type: publication
+  content: "Outreach article and podcast based on our PRL."
+  location: "Cambridge, UK"
+  links:
+    - text: Faculty webpage
+      url: https://www.maths.cam.ac.uk/features/dark-stars-new-theories-shed-light-black-holes
+    - text: Plus webpage
+      url: https://www.maths.cam.ac.uk/features/dark-stars-new-theories-shed-light-black-holes
 
 - date: "2026-03-02"
   type: publication
