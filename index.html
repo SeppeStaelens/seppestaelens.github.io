@@ -55,10 +55,10 @@
             <nav class="side-toc" aria-label="Research contents">
                 <span class="toc-title">On this page</span>
                 <a class="toc-h3" href="#numerical-relativity">Numerical Relativity</a>
-                <a class="toc-h3" href="#deep-learning">Deep learning in biostatistics</a>
                 <a class="toc-h3" href="#ml-eccentric">ML for eccentric binaries</a>
                 <hr class="toc-divider">
                 <a class="toc-h2" href="#previous-projects">Previous projects</a>
+                <a class="toc-h3" href="#deep-learning">Deep learning in biostatistics</a>
                 <a class="toc-h3" href="#gwb-white-dwarf">White dwarf GWB</a>
                 <a class="toc-h3" href="#hcsc">Hypercompact stellar clusters</a>
                 <a class="toc-h3" href="#photon-rings">Photon rings beyond GR</a>
@@ -69,11 +69,18 @@
                 <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity to simulate coalescing binaries under the expert guidance of Professor Ulrich Sperhake. 
                     Through computational simulations, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity. 
                     Our recent publication in  <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Physical Review Letters</a> presents long-term stable simulations of ultracompact solitonic boson stars, revealing that the feared light-ring instability may not be effective in destroying all ultracompact black-hole mimickers after all.</p>
-                <h3 id="deep-learning">Deep learning in biostatistics</h3>
-                <p>I am currently undertaking a <a href="https://dirac.ac.uk/innovation_placement/cruk-scotland-institute-cancer-genomics-and-imaging-data/">DiRAC Innovation Placement</a> at the Cancer Research UK Scotland Institute, on multimodal data integration and analysis. We are exploring how to improve automated domain identification in tissue slices, leveraging deep learning techniques to enhance the accuracy and efficiency of our analyses.</p>
                 <h3 id="ml-eccentric">Machine learning for eccentric compact binaries</h3>
-                <p>Work in progress, we are aiming to construct better machine-learning classifiers for identifying signatures of eccentricity in compact binary mergers.</p>
+                <p>
+                    We assess the utility of the wavelet scattering transform (WST) for the detection of eccentricity signatures in gravitational wave data. In our recent paper <a href="https://arxiv.org/abs/2602.24079">arXiv:2602.24079</a>, we show that the WST can be used to rapidly classify eccentricity in compact binary mergers, using relatively simple classifiers such as 1D-CNNs.
+                    This shows that the WST provides a compact time-frequency representation of the data that carries imprints of eccentricity.
+                </p>
                 <h2 id="previous-projects">Previous Projects</h2>
+                <h3 id="deep-learning">Deep learning in computational biology</h3>
+                <p>I have undertaken a <a href="https://dirac.ac.uk/innovation_placement/cruk-scotland-institute-cancer-genomics-and-imaging-data/">DiRAC Innovation Placement</a> at the Cancer Research UK Scotland Institute, on multimodal data integration and analysis. 
+                    We have explored how to improve automated domain identification in tissue slices, leveraging deep learning techniques to enhance the accuracy and efficiency of our analyses.
+                    In particular, we extended the GASTON-method to leverage multimodal data streams, combining spatial transcriptomics and morphology data to assess how much complementary information they can provide.
+                    Additionally, we applied the method to several in-house datasets, showing that it can provide additional insights into ongoing analyses of colorectal tumour samples and liver metastases.
+                </p>
                 <h3 id="gwb-white-dwarf">Gravitational wave background from extragalactic white dwarf binaries</h3>
                 <p>As part of my Master's Thesis in Astrophysics and Astronomy, I have studied the astrophysical gravitational-wave background (GWB) sourced by extragalactic white dwarf binaries in the LISA frequency band. Guided by Prof. Gijs Nelemans, we revisited an old paper studying this background, and compared it to other components making up the astrophysical GWB. 
                     Upper limits on the latter (in the high-frequency regime) have been placed by the LVK collaboration, and our simulation of the white dwarf GWB suggests that it must be the dominant component in the LISA frequency band, as opposed to what people thought. This suggests that we must be wary of drawing conclusions about the black hole and neutron star populations, should LISA detect such a GWB in the future.</p>
