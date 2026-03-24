@@ -99,6 +99,8 @@ function renderNews(newsItems) {
                 return 'fa-briefcase';
             case 'visit':
                 return 'fa-plane';
+            case 'outreach':
+                return 'fa-handshake';
             default:
                 return 'fa-circle-info';
         }
