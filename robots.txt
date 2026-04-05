@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /webpages/immerse25.html
+Disallow: /webpages/camvision25.html

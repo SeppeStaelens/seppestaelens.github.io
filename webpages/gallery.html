@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Seppe Staelens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seppe Staelens</h1>
+        <p>PhD Student, University of Cambridge</p>
+    </header>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching-outreach.html">Teaching & Outreach</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section>
+        <h2>Figures</h2>
+        <div class="animation-grid">
+            <article class="animation-card">
+                <a class="figure-zoom-link" href="../Pictures/BH_BS_comp_PRL.png" aria-label="Enlarge black hole and boson star figure">
+                    <img class="animation-frame" src="../Pictures/BH_BS_comp_PRL.png" alt="Black hole and boson star figure">
+                </a>
+                <h3>Black hole vs. boson star</h3>
+                <p>Comparison of ray-traced images of a Schwarzschild black hole and an ultracompact boson star. Figures made with <a href="https://github.com/drmayerson/FOORT" target="_blank" rel="noopener noreferrer">FOORT</a>, and used in our <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" target="_blank" rel="noopener noreferrer">PRL paper</a>.</p>
+            </article>
+            <article class="animation-card">
+                <a class="figure-zoom-link" href="../Pictures/WD_GWB_fig.jpg" aria-label="Enlarge white dwarf binaries figure">
+                    <img class="animation-frame" src="../Pictures/WD_GWB_fig.jpg" alt="White dwarf binary gravitational-wave background figure">
+                </a>
+                <h3>White dwarf binaries and the GW background</h3>
+                <p>The main plot from our <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html" target="_blank" rel="noopener noreferrer">A&amp;A paper</a>, in which we argue that extragalactic white dwarf binaries will dominate the stochastic gravitational-wave background in the LISA band.</p>
+            </article>
+        </div>
+
+        <h2>Animations</h2>
+        <p>This section contains example animations resulting from NR simulations with GRChombo.</p>
+        
+        <p>The below animations show a head-on collision of a black hole flying into a more massive boson star (the setup mimics IB in <a href="https://arxiv.org/abs/2307.02548" target="_blank" rel="noopener noreferrer">2307.02548</a>)</p>
+        <div class="animation-grid">
+            <article class="animation-card">
+                <img class="animation-frame" src="../Animations/mod_phi.gif" alt="Scalar field amplitude animation">
+                <h3>Scalar field amplitude</h3>
+                <p>This shows the boson star as it gets devoured by the black hole.</p>
+            </article>
+            <article class="animation-card">
+                <img class="animation-frame" src="../Animations/chi.gif" alt="Conformal factor animation">
+                <h3>Conformal factor</h3>
+                <p>This shows the black hole, prominently, and the boson star, less obvious.</p>
+            </article>
+            <article class="animation-card">
+                <img class="animation-frame" src="../Animations/AHF.gif" alt="Black hole apparent horizon growth animation">
+                <h3>Growth of the apparent horizon</h3>
+                <p>This shows the black hole apparent horizon growing as it devours the boson star, while the black hole also slows down.</p>
+            </article>
+        </div>
+
+        <div class="image-modal" id="image-modal" aria-hidden="true" role="dialog" aria-label="Expanded figure view">
+            <button class="image-modal-close" id="image-modal-close" aria-label="Close expanded image">&times;</button>
+            <img class="image-modal-content" id="image-modal-content" alt="Expanded figure">
+        </div>
+    </section>
+
+    <script>
+        (function() {
+            var modal = document.getElementById('image-modal');
+            var modalImage = document.getElementById('image-modal-content');
+            var closeButton = document.getElementById('image-modal-close');
+            var links = document.querySelectorAll('.figure-zoom-link');
+
+            function openModal(src, altText) {
+                modalImage.src = src;
+                modalImage.alt = altText || 'Expanded figure';
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeModal() {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                modalImage.src = '';
+            }
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var img = link.querySelector('img');
+                    var src = link.getAttribute('href');
+                    openModal(src, img ? img.alt : 'Expanded figure');
+                });
+            });
+
+            closeButton.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+                    closeModal();
+                }
+            });
+        })();
+    </script>
+
+    <footer>
+        &copy; 2024 Seppe Staelens, Background obtained from <a href="https://wallhaven.cc/w/1pwq23"> Wallraven </a>.
+    </footer>
+</body>
+</html>

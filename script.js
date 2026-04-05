@@ -1,23 +1,8 @@
-function toggleSection(sectionId) {
-    var sections = document.getElementsByTagName('section');
-    for (var i = 0; i < sections.length; i++) {
-        if (sections[i].id === sectionId) {
-            sections[i].classList.remove('hidden');
-        } else {
-            sections[i].classList.add('hidden');
-        }
-    }
-    if (sectionId === 'about') {
-        // sync heights when about is shown
-        setTimeout(syncNewsSidebarHeight, 50);
-    }
-}
-
 var resizeTimeoutId = null;
 
 function syncNewsSidebarHeight() {
-    var aboutMain = document.querySelector('#about .about-main');
-    var sidebar = document.querySelector('#about .news-sidebar');
+    var aboutMain = document.querySelector('.about-main');
+    var sidebar = document.querySelector('.news-sidebar');
     if (!aboutMain || !sidebar) {
         return;
     }
@@ -52,7 +37,9 @@ function loadNews() {
         return;
     }
 
-    fetch('news.yaml')
+    var newsPath = window.location.pathname.indexOf('/webpages/') !== -1 ? '../news.yaml' : 'news.yaml';
+
+    fetch(newsPath)
         .then(function(response) { return response.text(); })
         .then(function(yamlText) {
             var newsItems = [];
@@ -148,17 +135,6 @@ function renderNews(newsItems) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('Immerse25')) {
-        toggleSection('Immerse25');
-    }
-    else if (urlParams.has('Animations')) {
-        toggleSection('Animations');
-    }
-    else if (urlParams.has('CamVision25')) {
-        toggleSection('CamVision25');
-    }
-
     loadNews();
 
     // Single follow-up after initial render

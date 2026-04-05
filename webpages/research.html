@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Seppe Staelens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seppe Staelens</h1>
+        <p>PhD Student, University of Cambridge</p>
+    </header>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching-outreach.html">Teaching & Outreach</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section>
+        <div class="with-toc">
+            <nav class="side-toc" aria-label="Research contents">
+                <span class="toc-title">On this page</span>
+                <a class="toc-h3" href="#numerical-relativity">Numerical Relativity</a>
+                <a class="toc-h3" href="#ml-eccentric">ML for eccentric binaries</a>
+                <hr class="toc-divider">
+                <a class="toc-h2" href="#previous-projects">Previous projects</a>
+                <a class="toc-h3" href="#deep-learning">Deep learning in biostatistics</a>
+                <a class="toc-h3" href="#gwb-white-dwarf">White dwarf GWB</a>
+                <a class="toc-h3" href="#hcsc">Hypercompact stellar clusters</a>
+                <a class="toc-h3" href="#photon-rings">Photon rings beyond GR</a>
+            </nav>
+            <div class="section-content">
+                <h2>Research</h2>
+                <h3 id="numerical-relativity">Numerical Relativity</h3>
+                <p>Currently, I am engaged in research on black holes and boson stars, employing the tools of numerical relativity to simulate coalescing binaries under the expert guidance of Professor Ulrich Sperhake. 
+                    Through computational simulations, I strive to deepen our understanding of these compact objects and their behavior within the framework of General Relativity. 
+                    Our recent publication in  <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Physical Review Letters</a> presents long-term stable simulations of ultracompact solitonic boson stars, revealing that the feared light-ring instability may not be effective in destroying all ultracompact black-hole mimickers after all.</p>
+                <h3 id="ml-eccentric">Machine learning for eccentric compact binaries</h3>
+                <p>
+                    We assess the utility of the wavelet scattering transform (WST) for the detection of eccentricity signatures in gravitational wave data. In our recent paper <a href="https://arxiv.org/abs/2602.24079">arXiv:2602.24079</a>, we show that the WST can be used to rapidly classify eccentricity in compact binary mergers, using relatively simple classifiers such as 1D-CNNs.
+                    This shows that the WST provides a compact time-frequency representation of the data that carries imprints of eccentricity.
+                </p>
+                <h2 id="previous-projects">Previous Projects</h2>
+                <h3 id="deep-learning">Deep learning in computational biology</h3>
+                <p>I have undertaken a <a href="https://dirac.ac.uk/innovation_placement/cruk-scotland-institute-cancer-genomics-and-imaging-data/">DiRAC Innovation Placement</a> at the Cancer Research UK Scotland Institute, on multimodal data integration and analysis. 
+                    We have explored how to improve automated domain identification in tissue slices, leveraging deep learning techniques to enhance the accuracy and efficiency of our analyses.
+                    In particular, we extended the GASTON-method to leverage multimodal data streams, combining spatial transcriptomics and morphology data to assess how much complementary information they can provide.
+                    Additionally, we applied the method to several in-house datasets, showing that it can provide additional insights into ongoing analyses of colorectal tumour samples and liver metastases.
+                </p>
+                <h3 id="gwb-white-dwarf">Gravitational wave background from extragalactic white dwarf binaries</h3>
+                <p>As part of my Master's Thesis in Astrophysics and Astronomy, I have studied the astrophysical gravitational-wave background (GWB) sourced by extragalactic white dwarf binaries in the LISA frequency band. Guided by Prof. Gijs Nelemans, we revisited an old paper studying this background, and compared it to other components making up the astrophysical GWB. 
+                    Upper limits on the latter (in the high-frequency regime) have been placed by the LVK collaboration, and our simulation of the white dwarf GWB suggests that it must be the dominant component in the LISA frequency band, as opposed to what people thought. This suggests that we must be wary of drawing conclusions about the black hole and neutron star populations, should LISA detect such a GWB in the future.</p>
+                <h3 id="hcsc">Hypercompact stellar clusters</h3>
+                <p>Another leg of that Master's Thesis focused on hypercompact stellar clusters (HCSCs), and the role that stellar-mass black holes can play in their appearance. Together with Prof. Peter Jonker, I used PhaseFlow (a Fokker-Planck type code) to simulate HCSCs, in order to find that a compact population can have a significant influence on the cluster dynamics and its observational appearance. 
+                    We then briefly turned towards some faint stellar clusters that could potentially be such long sought-after HCSCs, and investigated whether our simulations could potentially explain their observational features. 
+                    Even though parts of the parameter space seemed to overlap with observations, further measurements of these cluster properties are required, such as the velocity dispersion, in order to draw conclusions.</p>
+                <h3 id="photon-rings">Photon rings beyond General Relativity</h3>
+                <p>My first actual research project was my Master's Thesis in theoretical physics, in which I studied the photon rings of black hole models in extensions of General Relativity (GR). Under the supervision of Prof. Thomas Hertog, and together with Dr. Daniel Mayerson and Prof. Fabio Bacchini, I studied a handful of black-hole spacetimes beyond GR and their observational features in VLBI images, such as those constructed by the Event Horizon Telescope (EHT).
+                First, we focused on the shadow, which is known to not be a great observable. We then turned towards the photon rings, which is a more promising observable, and found that in theory it can be used to distinguish between different black hole models, and therefore potentially test GR.
+                We focused on the Lyapunov exponent, which roughly determines the relative width of successive photon rings, and found that its value along the critical curve can vary significantly based on the underlying spacetime.
+                As this exponent is supposed to be independent of the actual emission model of the surrouding accretion disk, its measurement could potentially be used to test the underlying spacetime model. Measuring this quantity in practice is not possible as of now, but future versions of the EHT could allow us to estimate it, making its theoretical calculation of great interest.</p>  
+                <p>As a current side project, I am exploring the lensing around ultracompact boson stars in more detail, to understand whether the absence of a horizon and the presence of additional photon rings can leave significant imprints on observables.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Seppe Staelens, Background obtained from <a href="https://wallhaven.cc/w/1pwq23"> Wallraven </a>.
+    </footer>
+</body>
+</html>

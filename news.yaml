@@ -1,3 +1,21 @@
+- date: "2026-04-10"
+  type: talk
+  content: "The shape of eccentricity: rapid classification of eccentric binaries with the wavelet scattering transform."
+  location: "Cardiff, UK"
+
+- date: "2026-04-9"
+  type: visit
+  content: "Attending BritGrav 2026."
+  location: "Cardiff, UK"
+
+# - date: "2026-04-08"
+#   type: publication
+#   content: "Paper on black hole - boson star binaries."
+#   location: "Cambridge, UK"
+#   links:
+#     - text: arXiv link
+#       url: https://arxiv.org/abs/2602.24079
+
 - date: "2026-04-02"
   type: publication
   content: "Search for growing angular modes paper now published."
