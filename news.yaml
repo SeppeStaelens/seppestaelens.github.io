@@ -1,3 +1,8 @@
+- date: "2026-03-21"
+  type: outreach
+  content: "Pint of Science at the Alexandra Arms."
+  location: "Cambridge, UK"
+
 - date: "2026-04-10"
   type: talk
   content: "The shape of eccentricity: rapid classification of eccentric binaries with the wavelet scattering transform."
