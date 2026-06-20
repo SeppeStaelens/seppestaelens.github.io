@@ -110,6 +110,16 @@ footer {
     max-width: 70%;
 }
 
+.publication-links--wide {
+    max-width: 100%;
+    width: 100%;
+}
+
+.publication-links--wide a {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
 .publication-links a {
     display: inline-block;
     text-decoration: none;
@@ -131,6 +141,60 @@ footer {
 .publication-links a:focus {
     outline: 2px solid #00e5ff;
     outline-offset: 2px;
+}
+
+.publication-citations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.citation-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+.citation-pill:hover {
+    background-color: rgba(0, 229, 255, 0.14);
+    border-color: rgba(0, 229, 255, 0.5);
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+.citation-pill__label {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.citation-pill__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2ch;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.28);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.citation-pill--inspire .citation-pill__count {
+    background-color: rgba(255, 204, 0, 0.2);
+}
+
+.citation-pill--scholar .citation-pill__count {
+    background-color: rgba(66, 133, 244, 0.22);
 }
 
 .about-layout {
@@ -302,8 +366,7 @@ nav a:active {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0.38em;
     width: 20px;
     height: 20px;
     background-image: url('Pictures/BH.png');

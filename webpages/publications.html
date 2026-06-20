@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
             </nav>
             <div class="section-content">
                 <h2 id="external-links">External links</h2>
-                <div class="publication-links">
+                <div class="publication-links publication-links--wide">
                 <a href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">Inspire HEP</a>
                 <a href="https://scholar.google.be/citations?user=zMg5-84AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
                 <a href="https://arxiv.org/a/staelens_s_1.html" target="_blank" rel="noopener noreferrer">arXiv</a>
@@ -49,16 +50,73 @@
                 <h2 id="pubs-list">Publications</h2>
                 <h3 id="papers">Papers</h3>
                 <ul class="publications-list">
-                    <li><span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, & <span class="coauthor">Sperhake, U.</span> (2026). <em>Black Hole-Boson Star Binaries: Gravitational Wave Signals and Tidal Disruption.</em> <a href="https://arxiv.org/abs/2604.06312">arXiv:2604.06312</a> [gr-qc]</li>
-                    <li><span class="coauthor">Canizares, P.</span>, <b>Staelens, S. J.</b>, & <span class="coauthor">Romero-Shaw, I.</span> (2026). <em>The Shape of Eccentricity: Rapid Classification of Eccentric Binaries with the Wavelet Scattering Transform.</em> <a href="https://arxiv.org/abs/2602.24079">arXiv:2602.24079</a> [gr-qc]</li>
-                    <li><b>Staelens, S. J.</b> (2025). <em>Search for growing angular modes in ultracompact boson star evolutions</em>. J. Phys.: Conf. Ser. 3177 012046. <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3177/1/012046">Link</a></li>
-                    <li><span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, <span class="coauthor">Evstafyeva, T.</span>, & <span class="coauthor">Sperhake, U.</span> (2025). <em>Long-term stable nonlinear evolutions of ultracompact black-hole mimickers</em>. Phys. Rev. Lett. 135, 131402. <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Link</a></li>
-                    <li><b>Staelens, S.</b>, & <span class="coauthor">Nelemans, G.</span> (2024). <em>Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band</em>. Astronomy and Astrophysics, 683, A139. <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a></li>
-                    <li><b>Staelens, S.</b>, <span class="coauthor">Mayerson, D. R.</span>, <span class="coauthor">Bacchini, F.</span>, <span class="coauthor">Ripperda, B.</span>, & <span class="coauthor">Küchler, L.</span>   (2023). <em>Black hole photon rings beyond general relativity</em>. Physical Review D, 107(12), 124026. <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.124026">Link</a></li>
+                    <li data-arxiv="2604.06312">
+                        <span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, & <span class="coauthor">Sperhake, U.</span> (2026). <em>Black Hole-Boson Star Binaries: Gravitational Wave Signals and Tidal Disruption.</em> <a href="https://arxiv.org/abs/2604.06312">arXiv:2604.06312</a> [gr-qc]
+                        <div class="publication-citations" aria-label="Citation metrics for Black Hole-Boson Star Binaries: Gravitational Wave Signals and Tidal Disruption">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li data-arxiv="2602.24079">
+                        <span class="coauthor">Canizares, P.</span>, <b>Staelens, S. J.</b>, & <span class="coauthor">Romero-Shaw, I.</span> (2026). <em>The Shape of Eccentricity: Rapid Classification of Eccentric Binaries with the Wavelet Scattering Transform.</em> <a href="https://arxiv.org/abs/2602.24079">arXiv:2602.24079</a> [gr-qc]
+                        <div class="publication-citations" aria-label="Citation metrics for The Shape of Eccentricity: Rapid Classification of Eccentric Binaries with the Wavelet Scattering Transform">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li data-doi="10.1088/1742-6596/3177/1/012046">
+                        <b>Staelens, S. J.</b> (2025). <em>Search for growing angular modes in ultracompact boson star evolutions</em>. J. Phys.: Conf. Ser. 3177 012046. <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3177/1/012046">Link</a>
+                        <div class="publication-citations" aria-label="Citation metrics for Search for growing angular modes in ultracompact boson star evolutions">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li data-doi="10.1103/lk48-7r2f">
+                        <span class="coauthor">Marks, G. A.</span>, <b>Staelens, S. J.</b>, <span class="coauthor">Evstafyeva, T.</span>, & <span class="coauthor">Sperhake, U.</span> (2025). <em>Long-term stable nonlinear evolutions of ultracompact black-hole mimickers</em>. Phys. Rev. Lett. 135, 131402. <a href="https://journals.aps.org/prl/abstract/10.1103/lk48-7r2f" >Link</a>
+                        
+                        <div class="publication-citations" aria-label="Citation metrics for Long-term stable nonlinear evolutions of ultracompact black-hole mimickers">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li data-doi="10.1051/0004-6361/202348429">
+                        <b>Staelens, S.</b>, & <span class="coauthor">Nelemans, G.</span> (2024). <em>Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band</em>. Astronomy and Astrophysics, 683, A139. <a href="https://www.aanda.org/articles/aa/full_html/2024/03/aa48429-23/aa48429-23.html">Link</a>
+                        <div class="publication-citations" aria-label="Citation metrics for Likelihood of white dwarf binaries to dominate the astrophysical gravitational wave background in the mHz band">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li data-doi="10.1103/PhysRevD.107.124026">
+                        <b>Staelens, S.</b>, <span class="coauthor">Mayerson, D. R.</span>, <span class="coauthor">Bacchini, F.</span>, <span class="coauthor">Ripperda, B.</span>, & <span class="coauthor">Küchler, L.</span>   (2023). <em>Black hole photon rings beyond general relativity</em>. Physical Review D, 107(12), 124026. <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.124026">Link</a>
+                        <div class="publication-citations" aria-label="Citation metrics for Black hole photon rings beyond general relativity">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
                 <h3 id="book-chapters">Book Chapters</h3>
                 <ul class="publications-list">
-                <li>Lupsasca, A., Mayerson, D.R., Ripperda, B., <b>Staelens, S.</b> (2024). <em>A Beginner’s Guide to Black Hole Imaging and Associated Tests of General Relativity</em>. In: Bambi, C., Cárdenas-Avendaño, A. (eds) <em>Recent Progress on Gravity Tests</em>. Springer Series in Astrophysics and Cosmology. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-97-2871-8_6">Springer link</a>, <a href="https://arxiv.org/abs/2402.01290">arXiv link</a></li>
+                    <li data-doi="10.1007/978-981-97-2871-8_6">
+                        Lupsasca, A., Mayerson, D.R., Ripperda, B., <b>Staelens, S.</b> (2024). <em>A Beginner’s Guide to Black Hole Imaging and Associated Tests of General Relativity</em>. In: Bambi, C., Cárdenas-Avendaño, A. (eds) <em>Recent Progress on Gravity Tests</em>. Springer Series in Astrophysics and Cosmology. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-97-2871-8_6">Springer link</a>, <a href="https://arxiv.org/abs/2402.01290">arXiv link</a>
+                        <div class="publication-citations" aria-label="Citation metrics for A Beginner’s Guide to Black Hole Imaging and Associated Tests of General Relativity">
+                            <a class="citation-pill citation-pill--inspire" href="https://inspirehep.net/authors/2758294?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">
+                                <span class="citation-pill__label">Inspire HEP</span>
+                                <span class="citation-pill__count js-inspire-count">—</span>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
                 <h2 id="talks">Recorded Talks</h2>
                 For a full list of talks, please click <a href="talks.html">here</a>.

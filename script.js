@@ -155,3 +155,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Keep heights in sync on resize
 window.addEventListener('resize', debouncedSyncHeight);
+
+// Citation count fetcher
+document.addEventListener("DOMContentLoaded", () => {
+    fetchInspireCitations();
+});
+
+async function fetchInspireCitations() {
+    // Select any list items that contain either identifier
+    const publications = document.querySelectorAll("li[data-doi], li[data-arxiv]");
+
+    publications.forEach(async (pub) => {
+        const doi = pub.getAttribute("data-doi");
+        const arxiv = pub.getAttribute("data-arxiv");
+        const countSpan = pub.querySelector(".js-inspire-count");
+
+        if (!countSpan) return;
+
+        try {
+            // Build a flexible query string based on what data is available
+            let query = "";
+            if (doi) {
+                query = `doi:${doi}`;
+            } else if (arxiv) {
+                query = `arxiv:${arxiv}`;
+            } else {
+                return;
+            }
+
+            // Use the universal search literature endpoint
+            const apiUrl = `https://inspirehep.net/api/literature?q=${encodeURIComponent(query)}`;
+            const response = await fetch(apiUrl);
+            
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            
+            const data = await response.json();
+            
+            // The search endpoint returns an array of hits inside 'hits.hits'
+            const record = data.hits?.hits?.[0];
+            const citationCount = record?.metadata?.citation_count;
+
+            if (citationCount !== undefined) {
+                countSpan.textContent = citationCount;
+            } else {
+                countSpan.textContent = "0"; // Record exists, but has 0 citations
+            }
+        } catch (error) {
+            console.error(`Failed to fetch citations for paper:`, error);
+            countSpan.textContent = "—"; // Fallback to placeholder if API breaks
+        }
+    });
+}
