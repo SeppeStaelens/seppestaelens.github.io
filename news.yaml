@@ -1,3 +1,16 @@
+- date: "2026-07-8"
+  type: visit
+  content: "Dutch BH Consortium Meeting"
+  location: "Amsterdam, NL"
+
+- date: "2026-07-1"
+  type: publication
+  content: "Paper on ray tracing ultracompact boson stars."
+  location: "Cambridge, UK"
+  links:
+    - text: arXiv link
+      url: https://arxiv.org/abs/2606.30729
+
 - date: "2026-06-8"
   type: visit
   content: "UKNR CCP Meeting"
