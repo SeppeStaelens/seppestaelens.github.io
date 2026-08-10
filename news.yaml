@@ -1,3 +1,23 @@
+# - date: "2026-09-11"
+#   type: talk
+#   content: "Kavli Astrophysics Symposium 2026."
+#   location: "Cambridge, UK"
+
+# - date: "2026-09-1"
+#   type: visit
+#   content: "GRTeclyn hackathon"
+#   location: "Cambridge, UK"
+
+- date: "2026-08-12"
+  type: job
+  content: "Finishing internship at FactTrace."
+  location: "Cambridge, UK"
+
+- date: "2026-07-19"
+  type: visit
+  content: "New Frontiers in Strong Gravity"
+  location: "Benasque, Spain"
+
 - date: "2026-07-8"
   type: visit
   content: "Dutch BH Consortium Meeting"
