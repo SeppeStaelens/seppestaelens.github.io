@@ -1,12 +1,12 @@
-# - date: "2026-09-11"
-#   type: talk
-#   content: "Kavli Astrophysics Symposium 2026."
-#   location: "Cambridge, UK"
+- date: "2026-09-11"
+  type: talk
+  content: "Kavli Astrophysics Symposium 2026."
+  location: "Cambridge, UK"
 
-# - date: "2026-09-1"
-#   type: visit
-#   content: "GRTeclyn hackathon"
-#   location: "Cambridge, UK"
+- date: "2026-09-1"
+  type: visit
+  content: "GRTeclyn hackathon"
+  location: "Cambridge, UK"
 
 - date: "2026-08-12"
   type: job
