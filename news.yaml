@@ -1,3 +1,13 @@
+- date: "2026-10-9"
+  type: talk
+  content: "The shape of eccentricity"
+  location: "Louvain-La-Neuve, Belgium"
+
+- date: "2026-10-7"
+  type: visit
+  content: "Belgian-Dutch GW meeting"
+  location: "Louvain-La-Neuve, Belgium"
+
 - date: "2026-09-11"
   type: talk
   content: "Kavli Astrophysics Symposium 2026."
