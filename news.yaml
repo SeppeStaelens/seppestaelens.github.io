@@ -8,6 +8,14 @@
   content: "Belgian-Dutch GW meeting"
   location: "Louvain-La-Neuve, Belgium"
 
+- date: "2026-10-5"
+  type: publication
+  content: "Paper on eccentricity detection now published in PRD!"
+  location: "Cambridge, UK"
+  links:
+    - text: Journal link
+      url: https://journals.aps.org/prd/abstract/10.1103/fpzz-8mzh
+
 - date: "2026-09-11"
   type: talk
   content: "Kavli Astrophysics Symposium 2026."
