@@ -1,3 +1,13 @@
+- date: "2026-11-11"
+  type: publication
+  content: "FOORT code paper is out: Flexible Object-Oriented Ray Tracing."
+  location: "Cambridge, UK"
+  links:
+    - text: arXiv link
+      url: https://arxiv.org/abs/2611.15331
+    - text: GitHub
+      url: https://github.com/drmayerson/FOORT
+
 - date: "2026-11-3"
   type: visit
   content: "4th EMR/UK GW Workshop"
